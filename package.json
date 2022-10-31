@@ -1,0 +1,23 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "nodeapp_docker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleklz89/nodeapp.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Aleklz89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aleklz89/nodeapp/issues"
+  },
+  "homepage": "https://github.com/Aleklz89/nodeapp#readme"
+}
