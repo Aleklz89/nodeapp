@@ -1,7 +1,5 @@
 # nodeapp
-
-#run app
-node server
+-node server
 
 ## How to run via docker:
 - Install docker
