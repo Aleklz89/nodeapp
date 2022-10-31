@@ -1,6 +1,3 @@
-# nodeapp
-node server
-
 ## How to run via docker:
 - Install docker
 - Install docker-compose
