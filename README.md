@@ -3,4 +3,4 @@
 - Install docker-compose
 - Build image `docker build --build-arg PORT=8080 . -t application:latest`
 - Build container `sudo docker-compose build`
-- Run container `sudo docker-compose up`
+- Run container `sudo docker-compose up --memory=“912m" --cpus=0.2`
