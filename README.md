@@ -1,3 +1,8 @@
+# Simple node.js server
+
+> Docker hub repository [Here](https://hub.docker.com/r/aleklz89/nodeapp_core)
+
+
 ## How to run via docker:
 - Install docker
 - Install docker-compose
