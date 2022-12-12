@@ -12,5 +12,5 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
-CMD [ "node", "server.js" ]
+EXPOSE $PORT
+CMD PORT=$PORT node server.js
