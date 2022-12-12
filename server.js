@@ -1,4 +1,4 @@
-const http = require("http");
+const http = require('http')
 
 const html = `
 <!doctype>
@@ -16,7 +16,7 @@ const html = `
             <script src="app.js"></script>
         </body>
     </html>
-`;
+`
 const css = `
 body {
     margin: 0;
@@ -30,34 +30,34 @@ h1 {
     padding: .5em;
     font-family: 'Consolas'
 }
-`;
+`
 const js = `
     const button = document.querySelector('button');
     button.addEventListener('click', event => alert('Docker homework'));
-`;
+`
 
 http
   .createServer((req, res) => {
     switch (req.url) {
-      case "/":
-        res.writeHead(200, { "Content-Type": "text/html" });
-        res.end(html);
-        break;
+      case '/':
+        res.writeHead(200, { 'Content-Type': 'text/html' })
+        res.end(html)
+        break
 
-      case "/app.css":
-        res.writeHead(200, { "Content-Type": "text/css" });
-        res.end(css);
-        break;
+      case '/app.css':
+        res.writeHead(200, { 'Content-Type': 'text/css' })
+        res.end(css)
+        break
 
-      case "/app.js":
-        res.writeHead(200, { "Content-Type": "text/javascript" });
-        res.end(js);
-        break;
+      case '/app.js':
+        res.writeHead(200, { 'Content-Type': 'text/javascript' })
+        res.end(js)
+        break
 
       default:
-        res.writeHead(200, { "Content-Type": "text/plain" });
-        res.end("404 Не найдено");
-        break;
+        res.writeHead(200, { 'Content-Type': 'text/plain' })
+        res.end('404 Не найдено')
+        break
     }
   })
-  .listen(80, () => console.log("Сервер працює"));
+  .listen(80, () => console.log('Сервер працює'))
