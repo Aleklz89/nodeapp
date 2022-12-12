@@ -3,10 +3,10 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   push:
     branches:
-      - lec8
+      - main
   pull_request:
     branches:
-      - lec8
+      - main
 
 jobs:
   run-linters:
