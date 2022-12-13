@@ -27,11 +27,8 @@ jobs:
         uses: wearerequired/lint-action@v2
         with:
           eslint: true
-  docker:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Set up QEMU
+          
+      - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       -
         name: Set up Docker Buildx
