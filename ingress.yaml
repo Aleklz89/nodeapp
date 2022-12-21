@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cars-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api/tiny_router-service
+            pathType: "Prefix"
+            backend:
+              service:
+                name: tiny_router-service
+                port:
+                  number: 80

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+        - image: aleklz89/nodeapp
+          imagePullPolicy: Always
+          name: tiny_router
+          ports:
+            - containerPort: 8080
